@@ -22,7 +22,7 @@ const ProtectedRoutes = () => {
     return <h1>Không thể truy cập.Bạn đamg bị chặn bởi addmin</h1>;
   } else {
     if (window.location.pathname !== "/") {
-      window.location.href = "/";
+      // window.location.href = "/";
     }
     return (
       <>
