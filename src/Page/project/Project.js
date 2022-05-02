@@ -114,7 +114,7 @@ const Project = () => {
   return (
     <div style={{ padding: "20px" }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: "20px" }}>
-        <Link to="/insert/project"> <Button type="primary"> + {" "}Tạo dự án</Button></Link>
+        <Link to="/client-project-manager/insert/project"> <Button type="primary"> + {" "}Tạo dự án</Button></Link>
         <SearchInput
           onChange={(e)=>{setQ(e)}}
           style={{ marginRight: 10 }} placeholder="Tìm kiếm" />

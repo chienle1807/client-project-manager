@@ -53,7 +53,7 @@ export const StatusTag = (status, setIsActive, active) => {
     if (status.isActive)
         return (
             <div style={{ display: "flex", width: 140, justifyContent: "space-between" }}>
-                <p onClick={() => { navigate(`/infoemployee/${status.emp_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
+                <p onClick={() => { navigate(`/client-project-manager/infoemployee/${status.emp_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
                 <p onClick={async () => {
                     isActive(status.emp_id, { isActive: !status.isActive })
                     setTimeout(() => { setIsActive(!active) }, 0)
@@ -66,7 +66,7 @@ export const StatusTag = (status, setIsActive, active) => {
     else {
         return (
             <div style={{ display: "flex", width: 140, justifyContent: "space-between" }}>
-                <p onClick={() => { navigate(`/infoemployee/${status.emp_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
+                <p onClick={() => { navigate(`/client-project-manager/infoemployee/${status.emp_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
                 <p onClick={() => {
                     isActive(status.emp_id, { isActive: !status.isActive })
                     setTimeout(() => { setIsActive(!active) }, 0)
@@ -81,14 +81,14 @@ export const StatusTagProject = (project, setStatusProject, status) => {
     if (project.status === '1')
         return (
             <div style={{ display: "flex", width: 140, justifyContent: "space-between" }}>
-                <p onClick={() => { navigate(`/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
+                <p onClick={() => { navigate(`/client-project-manager/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
                 <p style={{ color: "green", cursor: "pointer" }}>hoàn thành</p>
 
             </div>
         )
     else if (project.status === '2') {
         return (<div style={{ display: "flex", width: 140, justifyContent: "space-between" }}>
-            <p onClick={() => { navigate(`/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
+            <p onClick={() => { navigate(`/client-project-manager/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
             <p onClick={async () => {
                 await statusProject(project.project_id, { status: 1 })
                 await apiEmployee.putEndDate({end_date:new Date().toISOString().slice(0, 10),project_id:project.project_id})
@@ -101,7 +101,7 @@ export const StatusTagProject = (project, setStatusProject, status) => {
     else if (project.status === '3') {
         return (
             <div style={{ display: "flex", width: 140, justifyContent: "space-between" }}>
-                <p onClick={() => { navigate(`/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
+                <p onClick={() => { navigate(`/client-project-manager/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
                 <p onClick={async () => {
                     statusProject(project.project_id, { status: 2 })
                     setTimeout(() => { setStatusProject(2) }, 0)
@@ -114,7 +114,7 @@ export const StatusTagProject = (project, setStatusProject, status) => {
     }
     else {
         return <div style={{ display: "flex", width: 140, justifyContent: "space-between" }}>
-            <p onClick={() => { navigate(`/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
+            <p onClick={() => { navigate(`/client-project-manager/infoProject/${project.project_id}`) }} style={{ color: "blue", cursor: "pointer" }}> Xem </p>
             <p onClick={async () => {
                 statusProject(project.project_id, { status: 3 })
                 setTimeout(() => { setStatusProject(3) }, 0)

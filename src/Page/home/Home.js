@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <div style={{ padding: 50 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: "20px" }}>
-        <Link to="/insert/project"><Button type="primary">Tạo Dự Án</Button></Link>
+        <Link to="/client-project-manager/insert/project"><Button type="primary">Tạo Dự Án</Button></Link>
         <SearchInput
           onChange={(e) => { setQ(e) }}
           style={{ marginRight: 10 }} placeholder="Tìm kiếm" />
@@ -63,7 +63,7 @@ const Home = () => {
         {dataSource.map((item, index) => {
           return <Col span={8} key={index}>
             <Card
-              onClick={()=>{navigate(`/infoProject/${item.project_id}`)}}
+              onClick={()=>{navigate(`/client-project-manager/infoProject/${item.project_id}`)}}
               hoverable
               style={{ width: 240 }}
               cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}

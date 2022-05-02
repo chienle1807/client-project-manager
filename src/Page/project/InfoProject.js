@@ -93,7 +93,7 @@ const InfoProject = () => {
        <div style={{display:"flex"}}>
          <div className="title" className="title">Số Thành Viên</div>
          <div style={{width:"700px"}}>{data.emp_number}</div>
-         {authState.role < 4 && <Link to = {`/EmployeeProject/${data.project_id}`}><div class="edit" >Xem Chi Tiết</div></Link>}
+         {authState.role < 4 && <Link to = {`/client-project-manager/EmployeeProject/${data.project_id}`}><div class="edit" >Xem Chi Tiết</div></Link>}
        </div>
        <Divider/>
        <div style={{display:"flex"}}>

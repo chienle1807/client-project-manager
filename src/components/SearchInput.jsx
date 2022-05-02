@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 export const SearchInput = styled.input`
     width: 250px;
     border: 0px;

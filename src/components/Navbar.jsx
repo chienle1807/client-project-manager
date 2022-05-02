@@ -53,7 +53,7 @@ const Navbar = () => {
     const handleLogout = ()=>{
         localStorage.removeItem("accessToken")
         setAuthState({...authState,status:false})
-        window.location.href="/"
+        window.location.href="/client-project-manager"
     }
     return (
        <NavbarContainer >

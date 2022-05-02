@@ -113,7 +113,7 @@ const Employee = () => {
   return (
     <div style={{ padding: "20px" }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: "20px" }}>
-        <Link to="/insert/employee"> <Button type="primary"> + {" "}Thêm Nhân Viên</Button></Link>
+        <Link to="/client-project-manager/insert/employee"> <Button type="primary"> + {" "}Thêm Nhân Viên</Button></Link>
         <SearchInput
           onChange={(e)=>{setQ(e)}}
           style={{ marginRight: 10 }} placeholder="Tìm kiếm" />

@@ -116,7 +116,7 @@ const SideMenu = (props) => {
       </div>
 
       <div className="side-menu-footer">
-        <NavLink to="/profile">
+        <NavLink to="/client-project-managerna/profile">
           <div className="avatar">
             <img src={user} alt="user" />
           </div>

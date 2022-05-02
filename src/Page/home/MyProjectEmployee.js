@@ -64,7 +64,7 @@ console.log(dataSource);
         {dataSource.map((item, index) => {
           return <Col span={8} key={index}>
             <Card
-              onClick={()=>{navigate(`/infoProject/${item.project_id}`)}}
+              onClick={()=>{navigate(`/client-project-manager/infoProject/${item.project_id}`)}}
               hoverable
               style={{ width: 240 }}
               cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
