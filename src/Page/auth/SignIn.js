@@ -47,7 +47,7 @@ const SignIn = () => {
                                 if (response.data.error) {
                                     alert(response.data.error);
                                 } else {
-                                    window.location.href = '/client-project-manage'
+                                    window.location.href = '/client-project-manager'
                                     localStorage.setItem("accessToken", response.data.token);
                                     setAuthState({ 
                                         username: response.data.username,
